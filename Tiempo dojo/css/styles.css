@@ -1,0 +1,87 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(141, 206, 239);
+    padding: 0 50px;
+    color: white;
+}
+
+.ciudades{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.ciudades > li{
+    margin: 20px;
+}
+
+.ciudadSanJose{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 0 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast{
+    display: flex;
+    flex-direction: row;
+    gap: 30px; 
+}
+
+.dias{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 400px;
+    background-color: rgb(205, 220, 220);
+}
+
+.temperatura{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.maxTemp{
+    color: red
+}
+
+.minTemp{
+    color: blue;
+}
+
+.fotoClima{
+    width: 150px;
+    border-radius: 70px;
+}
+
+.cuadroCookie{
+    background-color: rgb(188, 201, 201);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    margin: 0 50px;
+    padding: 20px;
+    gap: 30px;
+}
+
+.fotoCookie{
+    width: 70px;
+    height: 70px;
+}

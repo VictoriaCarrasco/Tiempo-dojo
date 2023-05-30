@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Forecast</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        <div class="container"> 
+            <header> 
+                <h1>DojoWeather</h1>
+                <ul onclick="clickCiudades(this)" class="ciudades">
+                    <li > Burbank </li>
+                    <li > Chicago </li>
+                    <li > Dallas </li>
+                </ul>
+            </header>
+
+            <main>
+                <div class="ciudadSanJose">
+                    <h1> San Jose </h1>
+                    <div> 
+                        <span>
+                            Show temperature in
+                        </span>
+                    <select onchange="changeMetric(this)">
+                        <option value="celcius">°C</option>
+                        <option value="farenheit">°F</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="forecast"> 
+                    <div class="dias">
+                        <h2> Today</h2>
+                        <img class="fotoClima"src="./images/some_rain.png" alt="Foto lluvia">
+                        <div class="descripcion"> 
+                            some rain
+                        </div>
+                        <div class="temperatura">
+                            <div class="maxTemp">
+                                <span class="max"> 24</span>°
+                            </div> 
+                            <div class="minTemp">
+                                <span class="min"> 18</span>°
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dias">
+                        <h2> Tomorrow</h2>
+                        <img class="fotoClima"src="./images/some_rain.png" alt="Foto lluvia">
+                        <div class="descripcion"> 
+                            some sun
+                        </div>
+                        <div class="temperatura">
+                            <div class="maxTemp">
+                                <span class="max"> 27</span>°
+                            </div> 
+                            <div class="minTemp">
+                                <span class="min"> 19</span>°
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dias">
+                        <h2> Friday</h2>
+                        <img class="fotoClima"src="./images/some_rain.png" alt="Foto lluvia">
+                        <div class="descripcion"> 
+                            some clouds
+                        </div>
+                        <div class="temperatura">
+                            <div class="maxTemp">
+                                <span class="max"> 21</span>°
+                            </div> 
+                            <div class="minTemp">
+                                <span class="min"> 16</span>°
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dias">
+                        <h2> Saturday</h2>
+                        <img class="fotoClima"src="./images/some_rain.png" alt="Foto lluvia">
+                        <div class="descripcion"> 
+                            some sun
+                        </div>
+                        <div class="temperatura">
+                            <div class="maxTemp">
+                                <span class="max"> 26</span>°
+                            </div> 
+                            <div class="minTemp">
+                                <span class="min"> 21</span>°
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+            <div class="cuadroCookie"> 
+                <img class="fotoCookie" src="./images/cookie.png" alt="Foto de cookie"> 
+                <div>
+                    <h3> Stop! Cookie time</h3>
+                    <p>
+                        We use cookies (sadly not the edible ones) to personalize 
+                    content and ads, to provide social media features and to
+                    analyse our traffic. <a href="#"> Read more </a>
+                    </p>
+                </div>
+                <button onclick="removerCookies(this)" class="botonCookie"> I Accept </button>
+            </div>
+        <script src="./js/index.js"> </script>
+    </body>
+</html>
